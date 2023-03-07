@@ -31,6 +31,6 @@ export function attatchSliderToElement($el: Element) {
     window.addEventListener("mousemove", controler);
   });
   window.addEventListener("mouseup", () => {
-    window.removeEventListener("mousemove", controler);
+    window.removeEventListener("mousemove", controler); // not work if using `slider.slide.bind(slider)`
   });
 }
